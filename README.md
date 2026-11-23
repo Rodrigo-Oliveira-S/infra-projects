@@ -8,11 +8,10 @@ Este repositório reúne laboratórios e scripts desenvolvidos durante minha evo
 
 ## Projetos
 
-| Projeto | Foco Técnico | Status |
-| :--- | :--- | :--- |
-| [01 — Checklist de Saúde do Servidor](./01-checklist-saude-servidor) | Diagnóstico de hardware, rede e DNS em Linux | [![Status](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/01-checklist-saude-servidor.yml/badge.svg)](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/01-checklist-saude-servidor.yml) |
-| [02 — Laboratório de SQL e `psql`](./02-laboratorio-sql-psql) | Inspeção de catálogos e armazenamento PostgreSQL | [![Status](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/02-laboratorio-sql-psql.yml/badge.svg)](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/02-laboratorio-sql-psql.yml) |
-
+| Projeto | Status |
+| :--- | :--- |
+| [01 - Checklist de Saúde do Servidor](./01-checklist-saude-servidor) | [![Status](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/01-checklist-saude-servidor.yml/badge.svg)](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/01-checklist-saude-servidor.yml) |
+| [02 - Laboratório de SQL e `psql`](./02-laboratorio-sql-psql) | [![Status](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/02-laboratorio-sql-psql.yml/badge.svg)](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/02-laboratorio-sql-psql.yml) |
 ## Tecnologias
 
 * **Sistemas:** Linux (Debian/Ubuntu)
