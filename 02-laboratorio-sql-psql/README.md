@@ -1,4 +1,4 @@
-# Projeto 02 — Laboratório de SQL Básico e `psql`
+# 02 — Laboratório de SQL Básico e `psql`
 
 [![02 - Laboratório de SQL Básico e psql](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/02-laboratorio-sql-psql.yml/badge.svg)](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/02-laboratorio-sql-psql.yml)
 

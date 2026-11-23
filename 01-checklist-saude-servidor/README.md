@@ -1,5 +1,7 @@
 # 01 - Checklist Automatizado de Saúde do Servidor
 
+[![01 - Checklist de Saúde do Servidor](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/01-checklist-saude-servidor.yml/badge.svg)](https://github.com/Rodrigo-Oliveira-S/infra-projects/actions/workflows/01-checklist-saude-servidor.yml)
+
 ## Objetivo
 
 Automatizar a rotina inicial de verificação de saúde de um servidor Linux, coletando evidências de identificação, processamento, memória, armazenamento, interfaces de rede e resolução DNS sem realizar alterações no sistema.
