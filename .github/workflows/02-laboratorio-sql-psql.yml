@@ -1,0 +1,50 @@
+name: 02 - Laboratório de SQL Básico e psql
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - '02-laboratorio-sql-psql/**'
+      - '.github/workflows/02-laboratorio-sql-psql.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '02-laboratorio-sql-psql/**'
+      - '.github/workflows/02-laboratorio-sql-psql.yml'
+
+jobs:
+  sql-lab:
+    name: Validar scripts SQL no PostgreSQL
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: lab_user
+          POSTGRES_PASSWORD: lab_password
+          POSTGRES_DB: laboratorio_db
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v5
+
+      - name: Preparar ambiente e tabela de laboratório
+        env:
+          PGPASSWORD: lab_password
+        run: |
+          psql -h localhost -U lab_user -d laboratorio_db -v ON_ERROR_STOP=1 -f 02-laboratorio-sql-psql/01_setup_lab.sql
+
+      - name: Executar consultas de diagnóstico do estágio
+        env:
+          PGPASSWORD: lab_password
+        run: |
+          psql -h localhost -U lab_user -d laboratorio_db -v ON_ERROR_STOP=1 -f 02-laboratorio-sql-psql/02_queries_lab.sql
