@@ -1,4 +1,4 @@
-name: Projeto 01 - Checklist de Saúde do Servidor
+name: 01 - Checklist de Saúde do Servidor
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Baixar código do repositório
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Executar checklist de saúde do servidor
         run: |
@@ -18,7 +18,7 @@ jobs:
           ./01-checklist-saude-servidor/check_server.sh | tee relatorio-saude-servidor.txt
 
       - name: Salvar relatório como artefato (.txt)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: relatorio-saude-servidor
           path: relatorio-saude-servidor.txt
