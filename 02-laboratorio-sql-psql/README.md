@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Automatizar a validação de scripts SQL de inspeção e diagnóstico em PostgreSQL, cobrindo listagem de bancos, schemas, roles e estruturas de tabelas via metacomandos `psql`, além de consultas de leitura em catálogos do sistema e medição de armazenamento sem operações destrutivas[cite: 7].
+Automatizar a validação de scripts SQL de inspeção e diagnóstico em PostgreSQL, cobrindo listagem de bancos, schemas, roles e estruturas de tabelas via metacomandos `psql`, além de consultas de leitura em catálogos do sistema e medição de armazenamento sem operações destrutivas.
 
 ## Estrutura do Projeto
 
